@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 cudów świata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wiszące ogrody Semiramidy</h1>
+    <nav>
+    <table class="menu" id="menularg">
+        <tr>
+            <td class="menu"><a href="podstrona1.html">Piramida Cheopsa</a></td>
+            <td class="menu"><a href="podstrona2.html">Ogrody Semiramidy</a>
+            <td class="menu"><a href="podstrona3.html">Świątynia Artemidy</a></td>
+            <td class="menu"><a href="podstrona4.html">Posąg Zeusa</a></td>
+            <td class="menu"><a href="podstrona5.html">Mauzoleum w Halikarnasie</a></td>
+            <td class="menu"><a href="podstrona6.html">Kolos Rodyjski</a></td>
+            <td class="menu"><a href="podstrona7.html">Latarnia na Faros</a></td>
+            <td class="menu"><a href="podstrona8.html">Galeria</a></td>
+            <td class="menu"><a href="index.html">Strona Główna</a></td>
+        </tr>
+    </table>
+    <table  class="menumed">
+        <tr>
+            <td class="menu"><a href="podstrona1.html">Piramida Cheopsa</a></td>
+            <td class="menu"><a href="podstrona2.html">Ogrody Semiramidy</a>
+            <td class="menu"><a href="podstrona3.html">Świątynia Artemidy</a></td>
+            <td class="menu"><a href="podstrona4.html">Posąg Zeusa</a></td>
+            </tr>
+            </table>
+            <table  class="menumed">
+            <tr>
+            <td class="menu"><a href="podstrona5.html">Mauzoleum w Halikarnasie</a></td>
+            <td class="menu"><a href="podstrona6.html">Kolos Rodyjski</a></td>
+            <td class="menu"><a href="podstrona7.html">Latarnia na Faros</a></td>
+            <td class="menu"><a href="podstrona8.html">Galeria</a></td>
+            <td class="menu"><a href="index.html">Strona Główna</a></td>
+        </tr>
+    </table>
+    </nav>
+    <div id="menu">
+        <h1 onclick="openNav()">&#9776;</h1>
+    </div>
+    <img src="media/ogrody.jpg" alt="banner" id="banner">
+    <img src="media/Hanging_Gardens_of_Babylon.jpg" alt="banner" id="bannersmall">
+    
+</header>
+    <main>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#schemat">Rycina</a>
+            <a href="#top">Do góry</a>
+          </div>
+          
+        <p>
+            <b>Wiszące ogrody królowej Semiramidy w Babilonie</b> – jeden z siedmiu cudów świata starożytnego zbudowany na polecenie króla Nabuchodonozora II (604–562 p.n.e.), który podarował je swojej żonie, Amytis.<br>
+            Niezwykłość wiszących ogrodów budziła podziw wszystkich ludzi współczesnych a także zdumienie i wielkie zainteresowanie potomnych. Opisywali je często historycy greccy, a od czasów Aleksandra Wielkiego zalicza się je do siedmiu cudów świata. Nabuchodonozor II podarował je swojej żonie, Amytis, ponieważ po przyjeździe do Babilonu bardzo tęskniła za bujną zielenią ojczystego kraju – Medii. Niejasne jest, dlaczego nazwano je imieniem Semiramidy. Jedna z teorii mówi, że pierwowzorem była królowa Sammu-ramat, a inna, że to przydomek samej Amytis.<br>
+            Ogrody najprawdopodobniej istniały rzeczywiście, wskazują na to wzmianki w wielu źródłach historycznych z tamtego okresu (Herodot V wiek p.n.e.) oraz późniejszego (pisali o nich m.in. Strabon, I wiek p.n.e. i Diodor Sycylijski, przełom er). Obecnie przyjmuje się, że najprawdopodobniej zbudowano je w mieście Babilon. Ponadto wykopaliska przeprowadzone w miejscu ich hipotetycznego położenia wykazały obecność pozostałości rozległego pałacu Nabuchodonozora II jak i specjalnej konstrukcji tarasów i studni.
+            Założono je na wznoszących się tarasach i podtrzymywanych specjalną konstrukcją, którą tworzyły szeregi wąskich, coraz wyższych korytarzy sklepionych kolebkowo. Każdy taras, na którym zasadzono rośliny, był izolowany smołą i powłoką ołowianą na których umieszczano warstwę odsączającą, a następnie grubą warstwę ziemi (do 2 m miąższości), w której rosły drzewa i krzewy, sztucznie nawadniane. Ogrody te zostały założone w VI lub VII wieku p.n.e. Zwisające z tarasów pnącza zakrywały mury, co sprawiało wrażenie, że rośliny zawieszone są w powietrzu. Do ich nawadniania używano wody z Eufratu, którą dostarczano na poszczególne poziomy za pomocą systemu kanałów i drenów.
+        </p>
+        <img src="media/Ogrody_semiramidy.jpg" alt="rycina ogrodów" id="schemat">
+        <br>
+        <caption>Ogrody Semiramidy według wyobrażeń z początku XX wieku</caption>
+        <br>
+        <a href="https://pl.wikipedia.org/wiki/Wiszące_ogrody_Semiramidy" target="_blank">Wikipedia(w nowej karcie)</a>
+    </main>
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+</body>
+</html>

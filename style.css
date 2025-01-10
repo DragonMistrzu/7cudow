@@ -1,0 +1,194 @@
+*{
+    color: wheat;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #241B2F;
+    overflow:scroll;
+}
+header{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    animation-name: tytul1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+table{
+    border-color: rgb(37, 236, 127);
+    border-width: 10px;
+    border-style: solid;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+td{
+    border-color: rgb(236, 37, 37);
+    border-width: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+input{
+    background-color: #241B2F;
+    border-style: solid;
+    border-color: wheat;
+}
+
+.menu{
+    width: 1200px;
+    border-width: 5px;
+    border-color: rgb(80, 39, 117);
+    background-color: rgb(53, 23, 82);
+    animation-name: tytul2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+#banner{
+    display: inline;
+}
+#bannersmall{
+    display:none;
+}
+#menularg{
+    display: inline;
+}
+#menu{
+    position: fixed;
+}
+#galeria{
+    text-align: center;
+}
+#image{
+    max-width: 80%;
+        height: auto;
+}
+#strzalki{
+    text-align: center;
+}
+ .menumed{
+    display: none;
+    width: 1200px;
+    border-width: 5px;
+    border-color: rgb(80, 39, 117);
+    background-color: rgb(53, 23, 82);
+}
+@media screen and (max-width:1200px) {
+    #banner{
+        display: none;
+    }
+    #bannersmall{
+        display:inline;
+    }
+
+    #menularg{
+        display: none;
+    }
+    .menumed{
+        display: inline;
+    }
+  
+    }
+  
+  /* Użyj polecenia @media, dla zmiany wyglądu przy szerokości 800px: */
+  @media screen and (max-width:800px) {
+    #banner{
+        display: none;
+    }
+    #bannersmall{
+        display:none;
+    }
+
+    #menularg{
+        display: none;
+    }
+    .menumed{
+        display: inline;
+    }
+  
+    }
+    @keyframes tytul1{
+        0%{
+            color: white;
+        }
+        12.5%{
+            color: lime;
+        }
+        25%{
+            color: orangered;
+        }
+        37.5%{
+            color: orchid;
+        }
+        50%{
+            color: red;
+        }
+        62.5%{
+            color:green ;
+        }
+        75%{
+            color: cyan;
+        }
+        87.5%{
+            color: darkgoldenrod;
+        }
+        100%{
+            color: white;
+        }
+    }
+    @keyframes tytul2{
+        0%{
+            background-color: rgb(53, 23, 82);
+        }
+        50%{
+            background-color: rgb(80, 39, 117);
+        }
+        100%{
+            background-color: rgb(53, 23, 82);
+        }
+    }
+    main{
+        width: 75%;
+        /*text-align: center;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:rgb(30, 0, 85); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }

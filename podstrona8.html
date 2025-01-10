@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <script>
+        var i = 1;
+function image(a){
+    var image = document.getElementById("image");
+    var link = document.getElementById("image_link");
+    if (a == 1){
+        i = 1;
+        image.src = "media/banner.jpg";
+        image_link.href = "images/warback1.png";
+    }
+    else if (a == 2){
+        i = 2;
+        image.src = "media/EfesKebab.jpg";
+        image_link.href = image.src;
+    }
+    else if (a == 3){
+        i = 3;
+        image.src = "media/rodyo.jpg";
+        image_link.href = image.src;
+    }
+    else if (a == 4){
+        i = 4;
+        image.src = "media/ogrody.jpg";
+        image_link.href = image.src;
+    }
+    else{
+        image.src = "media/latarnia.png";
+        image_link.href = image.src;
+        i = 5;
+    }
+}
+function advance(){
+    i++;
+    if (i == 6) i = 1;
+    image(i);
+}
+function retard(){
+    i--;
+    if (i == 0) i = 5;
+    image(i);
+}
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria</h1>
+        <nav>
+            <table class="menu" id="menularg">
+                <tr>
+                    <td class="menu"><a href="podstrona1.html">Piramida Cheopsa</a></td>
+                    <td class="menu"><a href="podstrona2.html">Ogrody Semiramidy</a>
+                    <td class="menu"><a href="podstrona3.html">Świątynia Artemidy</a></td>
+                    <td class="menu"><a href="podstrona4.html">Posąg Zeusa</a></td>
+                    <td class="menu"><a href="podstrona5.html">Mauzoleum w Halikarnasie</a></td>
+                    <td class="menu"><a href="podstrona6.html">Kolos Rodyjski</a></td>
+                    <td class="menu"><a href="podstrona7.html">Latarnia na Faros</a></td>
+                    <td class="menu"><a href="podstrona8.html">Galeria</a></td>
+                    <td class="menu"><a href="index.html">Strona Główna</a></td>
+                </tr>
+            </table>
+            <table  class="menumed">
+                <tr>
+                    <td class="menu"><a href="podstrona1.html">Piramida Cheopsa</a></td>
+                    <td class="menu"><a href="podstrona2.html">Ogrody Semiramidy</a>
+                    <td class="menu"><a href="podstrona3.html">Świątynia Artemidy</a></td>
+                    <td class="menu"><a href="podstrona4.html">Posąg Zeusa</a></td>
+                    </tr>
+                    </table>
+                    <table  class="menumed">
+                    <tr>
+                    <td class="menu"><a href="podstrona5.html">Mauzoleum w Halikarnasie</a></td>
+                    <td class="menu"><a href="podstrona6.html">Kolos Rodyjski</a></td>
+                    <td class="menu"><a href="podstrona7.html">Latarnia na Faros</a></td>
+                    <td class="menu"><a href="podstrona8.html">Galeria</a></td>
+                    <td class="menu"><a href="index.html">Strona Główna</a></td>
+                </tr>
+            </table>
+            </nav>
+    </header>
+      <article>
+        <div id="galeria"><img src="media/banner.jpg" id="image"></div>
+    <div id="strzalki">
+        <img src="media/back-arrow-icon.png" alt="lewo" onclick="retard()" class="arrow">
+    <img src="media/forwd.png" alt="prawo" onclick="advance()" class="arrow">
+    </div>
+      </article>
+      <main>
+        <h1>Niespodziewany Formularz</h1>
+        <form action="mailto:maksymilian.dardzinski@tm1.edu.pl" method="post">
+            <h2>Która podstrona podobała ci się najbardziej?</h2>
+            <input type="radio" id="glowna" name="ktorastrona" value="glowan"> <label for=glowna>Strona Główna</label><br>
+           <input type="radio" id="ciekawostki" name="ktorastrona" value="ciekawostki"> <label for=ciekawostki>Ciekawostki</label><br>
+           <input type="radio" id="gal" name="ktorastrona" value="gal" > <label for=gal>Galeria</label><br>
+           <h2>Co dodałbyś/dodałabyś coś do strony?</h2>
+           <input type="text">
+           <h2>Której z podanych grup poleciłbyś tą stronę?</h2>
+           <input type="checkbox" id="ucz" name="hlep" value="ucz"> <label for=ucz>Uczniom/Studentom</label><br>
+          <input type="checkbox" id="tur" name="hlep" value="tur"> <label for=tur>Turystom</label><br>
+          <input type="checkbox" id="hist" name="hlep" value="hist"> <label for=hist>Historykom</label><br>
+           <h2>Czy uważasz stronę za przydatną/interesującą?</h2>
+           <input type="radio" id="tak" name="szpion" value="tak"> <label for=tak>Tak</label><br>
+          <input type="radio" id="nie" name="szpion" value="nie"> <label for=nie>Nie</label><br>
+          <br>
+          <input type="submit" value="zwróć formularz"><input type="reset" value="Resetuj formularz">
+        </form>
+      </main>
+     
+
+</body>
+</html>
