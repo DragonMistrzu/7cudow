@@ -46,6 +46,10 @@ input{
     animation-iteration-count: infinite;
 
 }
+footer{
+    text-align: center;
+    text-decoration: overline;
+}
 #banner{
     display: inline;
 }
